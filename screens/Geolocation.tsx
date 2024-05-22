@@ -3,7 +3,7 @@ import React from "react";
 
 const GeolocationScreen = () => {
   return (
-    <View>
+    <View style={styles.geoContainer}>
       <Text>GeolocationScreen</Text>
     </View>
   );
@@ -11,4 +11,10 @@ const GeolocationScreen = () => {
 
 export default GeolocationScreen;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  geoContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+});

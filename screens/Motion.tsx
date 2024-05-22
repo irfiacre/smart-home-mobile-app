@@ -1,14 +1,20 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 
-const MotionScreen = () => {
+const StepsScreen = () => {
   return (
-    <View>
-      <Text>MotionScreen</Text>
+    <View style={styles.stepsContainer}>
+      <Text>StepsScreen</Text>
     </View>
   );
 };
 
-export default MotionScreen;
+export default StepsScreen;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  stepsContainer: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+});

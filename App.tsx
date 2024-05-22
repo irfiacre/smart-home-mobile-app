@@ -13,7 +13,7 @@ import {
 } from "@expo-google-fonts/poppins";
 import NavigationTabs from "./navigation/tabs";
 import { NavigationContainer } from "@react-navigation/native";
-
+import { PaperProvider } from "react-native-paper";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -39,10 +39,13 @@ export default function App() {
 
   return (
     <View style={styles.container} onLayout={onLayoutRootView}>
+      {/* <StatusBar style="auto" /> */}
+      <Text>xxx</Text>
+      {/* <PaperProvider> */}
       <NavigationContainer>
         <NavigationTabs />
       </NavigationContainer>
-      <StatusBar style="auto" />
+      {/* </PaperProvider> */}
     </View>
   );
 }
@@ -50,9 +53,9 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // backgroundColor: "#000999",
     alignItems: "center",
     justifyContent: "center",
     fontFamily: "Poppins_600SemiBold",
+    backgroundColor: "#fff",
   },
 });
